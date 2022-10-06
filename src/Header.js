@@ -1,4 +1,4 @@
-import { Search } from '@mui/icons-material'
+import { Search, ShoppingBasket} from '@mui/icons-material'
 import React from 'react'
 import { Link } from 'react-router-dom'
 import Amznlogoo from "../src/Amznlogoo.png"
@@ -16,11 +16,11 @@ function Header() {
     </div>
       <div className='header_nav'>
 
-        <Link className='header_link'>
+        <Link to="/login" className='header_link'>
 
           <div className='header_option'>
-            <span>Hello hamza</span>
-            <span>Sign In</span>
+            <span className='h_o_l1'>Hello hamza</span>
+            <span className='h_o_l2'>Sign In</span>
           </div>
         </Link>
       </div>
@@ -28,11 +28,11 @@ function Header() {
 
       <div className='header_nav'>
 
-<Link to="/login" className='header_link'>
+<Link  className='header_link'>
 
   <div className='header_option'>
-    <span>Hello hamza</span>
-    <span>LogIn</span>
+    <span className='h_o_l1'>Returns</span>
+    <span className='h_o_l2'>& Orders</span>
   </div>
 </Link>
 </div>
@@ -42,22 +42,23 @@ function Header() {
 <Link className='header_link'>
 
   <div className='header_option'>
-    <span>Hello hamza</span>
-    <span>Sign In</span>
+    <span className='h_o_l1'>Your</span>
+    <span className='h_o_l2'>Prime</span>
   </div>
 </Link>
 </div>
 
-<div className='header_nav'>
 
-<Link className='header_link'>
 
-  <div className='header_option'>
-    <span>Hello hamza</span>
-    <span>Sign In</span>
+<Link to="/checkout" className='header_link'>
+  <div className='header_optionBasket'>
+    <ShoppingBasket/>
+    <span className='countbasket'>0</span>
   </div>
 </Link>
-</div>
+
+
+
 
     </nav>
   )

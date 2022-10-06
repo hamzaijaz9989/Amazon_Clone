@@ -2,6 +2,9 @@
     background-color: #131921;
     display: flex;
     align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 
 }
 .header_logo{
@@ -16,17 +19,49 @@
     border: none;
     padding: 10px;
     height: 10px;
-    width: 60%;
+    width: 100%;
   
 }
 .header_search{
   
     display: flex;
     flex: 1;
+    padding: 10px;
 
 }
 .header_searchIcon{
     background-color: orange;
     padding: 4px;
     height: 22px !important;
+}
+.header_nav{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+.header_link{
+    text-decoration: none;
+    color: white;
+}
+.header_option{
+    display: flex;
+    flex-direction: column;
+   
+    margin-right: 10px;
+}
+.h_o_l1{
+    font-size: 12px;
+}
+.h_o_l2{
+    font-size: 15px;
+    font-weight: 900;
+}
+
+.header_optionBasket{
+    display: flex;
+   
+}
+.countbasket{
+    padding: 5px;
+    padding-right: 10px;
 }
