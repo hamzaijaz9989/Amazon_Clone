@@ -11,7 +11,7 @@ ReactDOM.render(
   <>
   <BrowserRouter>
   <Header/>
-    <App />
+    <p className='color'><App /></p>
     </BrowserRouter>
   </>,document.getElementById('root')
 );
